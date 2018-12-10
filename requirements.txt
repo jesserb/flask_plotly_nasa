@@ -4,7 +4,7 @@ chardet==3.0.4
 Click==7.0
 cycler==0.10.0
 decorator==4.3.0
-Flask==0.12.1
+Flask==0.12.3
 idna==2.7
 ipython-genutils==0.2.0
 itsdangerous==1.1.0
