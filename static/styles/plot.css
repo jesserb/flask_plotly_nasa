@@ -1,0 +1,9 @@
+body {
+    background-color: #162029;
+}
+.graph_container {
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

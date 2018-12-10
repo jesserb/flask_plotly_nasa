@@ -1,0 +1,8 @@
+README.txt
+/database/nasa_secrets.py
+/plots/plotly_secrets.py
+**/__pycache__
+/cache/**
+/venv
+/venv/**
+/.Python

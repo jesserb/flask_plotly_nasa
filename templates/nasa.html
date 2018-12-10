@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/nasa.css') }}">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="header-container">
+            <div id="title-container">
+                The Title Goes Here
+            </div>
+        </div>
+        <div class="intro-container">
+            <div id="intro-section">
+                Hello and welcome to the project! Here we will have a number of figures representing
+                real data from Nasa satallites, and provided by their own APIs. See below to explore
+                he various content.
+            </div>
+        </div>
+
+        <div class="lines-right-wrapper">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+        </div>
+        <div class="content-section">
+            <div class="img-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Magnificent_CME_Erupts_on_the_Sun_-_August_31.jpg"/>
+            </div>
+            <div class="info-container">
+                <div class="info-title">Solar Flares</div>
+                <div class="info-text-wrapper">
+                    {{ FLARE_INFO }}
+                </div>
+                <form action='/solarflare' method="post">
+                    <button type='submit' class="action-btn">Solar Flares</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="lines-left-wrapper">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+        </div>
+        <div class="content-section">
+            <div class="info-container">
+                <div class="info-title">Coronal Mass Ejection (CME)</div>
+                <div class="info-text-wrapper">
+                        {{ CME_INFO }}
+                </div>
+                <form action='/cme' method="post">
+                    <button class="action-btn" type="submit">Coronal Mass Ejection</button>
+                </form>
+            </div>
+            <div class="img-container">
+                <img src="https://images.theconversation.com/files/241021/original/file-20181017-41156-1bho8cf.jpg?ixlib=rb-1.1.0&rect=117%2C0%2C1934%2C967&q=45&auto=format&w=668&h=324&fit=crop"/>
+            </div>
+        </div>  
+        
+        <div class="lines-right-wrapper">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+        </div>
+        <div class="content-section">
+            <div class="img-container">
+                <img src="https://mars.nasa.gov/system/downloadable_items/38906_mars-maven-artist-concept-solar-wind.png"/>
+            </div>
+            <div class="info-container">
+                <div class="info-title">Solar Energetic Particles (SEPE)</div>
+                <div class="info-text-wrapper">
+                        {{ PARTICLE_INFO }}
+                </div>
+                <form action='/sese' method="post">
+                    <button class="action-btn" type="submit">Solar Energetic Particles</button>
+                </form>
+            </div>
+        </div> 
+
+        <div class="lines-left-wrapper">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+        </div>
+        <div class="content-section">
+            <div class="info-container">
+                <div class="info-title">Near Earth Objects (NEO)</div>
+                <div class="info-text-wrapper">
+                        {{ NEO_INFO }}
+                </div>
+                <form action='/neo' method="post">
+                    <button class="action-btn" type="submit">Near Earth Objects</button>
+                </form>
+            </div>
+            <div class="img-container">
+                <img src="https://newsreports.live/wp-content/uploads/2018/06/26132/17016580_G.png"/>
+            </div>
+        </div> 
+    </body>
+</html>
