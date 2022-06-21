@@ -15,7 +15,7 @@ kiwisolver==1.0.1
 MarkupSafe==1.1.0
 matplotlib==3.0.2
 nbformat==4.4.0
-numpy==1.15.4
+numpy==1.22.0
 plotly==3.4.2
 pyparsing==2.3.0
 python-dateutil==2.7.5
